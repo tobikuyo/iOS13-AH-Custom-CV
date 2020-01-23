@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,21 +38,70 @@
             </objects>
             <point key="canvasLocation" x="139" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Yacht Detail View Controller-->
         <scene sceneID="yXN-Sy-aFa">
             <objects>
-                <viewController id="XeC-WC-Arv" sceneMemberID="viewController">
+                <viewController id="XeC-WC-Arv" customClass="YachtDetailViewController" customModule="Coded_CollectionView_xcdoe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R1i-7T-2HD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yacht Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-iF-W1O">
+                                <rect key="frame" x="20" y="89" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-K9-lVS">
+                                <rect key="frame" x="20" y="178" width="374" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="282" id="ewS-xC-ifg"/>
+                                    <constraint firstAttribute="width" constant="374" id="rqQ-0k-zxp"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Za-Bo-ptI">
+                                <rect key="frame" x="20" y="488" width="374" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDM-sc-DY1">
+                                <rect key="frame" x="20" y="129" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.783772409" green="0.86914181710000005" blue="0.98215395210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yT8-kI-l8d" firstAttribute="trailing" secondItem="1Za-Bo-ptI" secondAttribute="trailing" constant="20" id="0sx-tm-ybx"/>
+                            <constraint firstItem="tDM-sc-DY1" firstAttribute="top" secondItem="jLa-iF-W1O" secondAttribute="bottom" constant="19" id="83z-3G-mqG"/>
+                            <constraint firstItem="yT8-kI-l8d" firstAttribute="trailing" secondItem="jLa-iF-W1O" secondAttribute="trailing" constant="20" id="EOy-8E-IUk"/>
+                            <constraint firstItem="yT8-kI-l8d" firstAttribute="trailing" secondItem="tDM-sc-DY1" secondAttribute="trailing" constant="20" id="Hgt-sd-lxo"/>
+                            <constraint firstItem="vpv-K9-lVS" firstAttribute="centerX" secondItem="R1i-7T-2HD" secondAttribute="centerX" id="Lhd-ET-adT"/>
+                            <constraint firstItem="jLa-iF-W1O" firstAttribute="top" secondItem="yT8-kI-l8d" secondAttribute="top" constant="89" id="Tk2-5r-o4t"/>
+                            <constraint firstItem="1Za-Bo-ptI" firstAttribute="leading" secondItem="yT8-kI-l8d" secondAttribute="leading" constant="20" id="ZQh-cf-Qi3"/>
+                            <constraint firstItem="1Za-Bo-ptI" firstAttribute="bottom" secondItem="yT8-kI-l8d" secondAttribute="bottom" id="ihY-ws-D4b"/>
+                            <constraint firstItem="tDM-sc-DY1" firstAttribute="leading" secondItem="yT8-kI-l8d" secondAttribute="leading" constant="20" id="rgw-Ty-Tca"/>
+                            <constraint firstItem="1Za-Bo-ptI" firstAttribute="top" secondItem="vpv-K9-lVS" secondAttribute="bottom" constant="28" id="s1v-SZ-SQh"/>
+                            <constraint firstItem="vpv-K9-lVS" firstAttribute="top" secondItem="tDM-sc-DY1" secondAttribute="bottom" constant="28" id="wQ0-nI-nRi"/>
+                            <constraint firstItem="jLa-iF-W1O" firstAttribute="leading" secondItem="yT8-kI-l8d" secondAttribute="leading" constant="20" id="yFE-8Y-fVO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yT8-kI-l8d"/>
                     </view>
                     <navigationItem key="navigationItem" id="43I-fO-6hL"/>
+                    <connections>
+                        <outlet property="priceLabel" destination="tDM-sc-DY1" id="5pM-gI-J2T"/>
+                        <outlet property="textView" destination="1Za-Bo-ptI" id="1pD-Q1-oRy"/>
+                        <outlet property="yachtImage" destination="vpv-K9-lVS" id="BQg-OE-G4y"/>
+                        <outlet property="yachtName" destination="jLa-iF-W1O" id="D3t-a2-iCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ND-vv-O3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="110"/>
+            <point key="canvasLocation" x="928.98550724637687" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>

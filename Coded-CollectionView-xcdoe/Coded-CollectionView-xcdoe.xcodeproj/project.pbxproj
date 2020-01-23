@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C59AEF823D9307F00DEF44C /* YachtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C59AEF723D9307F00DEF44C /* YachtDetailViewController.swift */; };
 		456DA23023D7638E00363BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456DA22F23D7638E00363BD9 /* AppDelegate.swift */; };
 		456DA23223D7638E00363BD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456DA23123D7638E00363BD9 /* SceneDelegate.swift */; };
 		456DA23423D7638E00363BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456DA23323D7638E00363BD9 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C59AEF723D9307F00DEF44C /* YachtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YachtDetailViewController.swift; sourceTree = "<group>"; };
 		456DA22C23D7638E00363BD9 /* Coded-CollectionView-xcdoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coded-CollectionView-xcdoe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		456DA22F23D7638E00363BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456DA23123D7638E00363BD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				456DA23323D7638E00363BD9 /* ViewController.swift */,
+				2C59AEF723D9307F00DEF44C /* YachtDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				456DA23423D7638E00363BD9 /* ViewController.swift in Sources */,
+				2C59AEF823D9307F00DEF44C /* YachtDetailViewController.swift in Sources */,
 				456DA24723D7657F00363BD9 /* MegaYacht.swift in Sources */,
 				456DA23023D7638E00363BD9 /* AppDelegate.swift in Sources */,
 				456DA23223D7638E00363BD9 /* SceneDelegate.swift in Sources */,
